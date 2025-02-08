@@ -1,22 +1,25 @@
 # Section 1 Getting Started with Git and GitHub
 
-**Note**: Lessons not included are practice exercises.
+**Note**: Lessons that are not included are practice exercises.
 
 ## Lesson 1 Intro
 
-**Git**: Free, open source version control system. It only stores the differences between versions so fast and takes up little space. The differences are store in the hidden .git folder in your repo. To view the folder, select View > Show > Hidden Items in File Explorer.
+**Git**: Free, open source version control system. It only stores the differences between versions. The differences are stored in the hidden .git folder in the repo. To view the ,git folder, select **View** > **Show** > **Hidden Items** in File Explorer.
 
 **GitHub**: Commercial platform on which you can host your files remotely and manage them using Git. Git Hub has a good UI and makes collaboration easy. It is free for public files.
 
 ## Lesson 2 Docs Like Code
 
-Documentation is treated like code via processes => see Docs like Code by Anne Gentle
-* Use text formats for documentation that are human readable.
-    * **Markdown** (.md): Doesn't have tags. Has many variations called flavors, for example, GitHub-flavored markdown.
-    * **reStructuredText** (.rst): Used primarily in the Python programming language community for technical documentation. No tags, no flavors, can extend its functionality. More complex than Markdown and harder to read.
-    * **Asciidoc** (.adoc or .txt): Similar to reStructuredText - no tags, one flavor, can extend functionality.
-* Use version control tools such as Git and GitHub.
-* Use a review process similar to code reviews.
+Documentation is treated like code via processes. See _Docs like Code_ by Anne Gentle.
+
+The docs like code method uses:
+
+* Text formats for documentation that are human readable.
+    * **Markdown** (.md): Doesn't have tags. Has many variations called flavors, for example, GitHub-flavored markdown (GFM).
+    * **reStructuredText** (.rst): Used primarily in the Python programming language community for technical documentation. No tags or flavors, can extend its functionality. More complex than Markdown and harder to read.
+    * **Asciidoc** (.adoc or .txt): Similar to reStructuredText with no tags, one flavor, and can extend functionality.
+* Version control tools such as Git and GitHub.
+* Review processes similar to code reviews.
 
 **GitBook**: Similar to GitHub but specific to documentation. You can use Git with GitBook.
 
@@ -24,7 +27,7 @@ Documentation is treated like code via processes => see Docs like Code by Anne G
 
 Also called revision control systems or control source systems.
 
-**Collaboration**: With version control systems, multiple users manage the versions as if the files all had the same name, unlike intro-v1.text, intro-v2.txt, intro-v3.txt, etc.
+**Collaboration**: With version control systems, multiple users manage the versions as if the files all had the same name (unlike intro-v1.text, intro-v2.txt, intro-v3.txt, etc.)
 
 ### Git Innovations
 
@@ -58,8 +61,9 @@ Multiple users can read and/or write versions, if they have permission to write.
 * Typically exists locally and remotely but they not always in sync.
 
 You can create a repo locally and then push it to GitHub but easier to create in GitHub and then clone locally.
-* Be sure to include a ReadMe.md file. It is the documentation for the repo.
-* After the repo is created in GitHub, click the **<>Code** button to copy the URL. You can then use the command below to clone the repo locally. You can also opt to open the repo with GitHub Desktop.
+* Always include a ReadMe.md file. It is the documentation for the repo.
+* After the repo is created in GitHub, click the **<>Code** button to access and copy the URL. You can then use the command below to clone the repo locally. You can also opt to open the repo with GitHub Desktop.
+
     ```
     git clone https://github.com/<user>/<repo>
     ```
@@ -76,13 +80,15 @@ This course uses the Unix operating system command line to use Git.
 ### Unix commands
 * **pwd**: Returns the path of the current directory (print working directory)
 * **ls**: Returns list of directories (folders) and files in the current directory
-* **mkdir**: makes new directory but won't change to that directory
-* **cd**: use to move to a different directory
-    * **cd _name_** => specify the name of the directory to change to
-    ![screenshot of cd command using path](https://github.com/susanne-sundseth/Git-GH-for-writers.git/assets/cd_directory_name_with_path.png)
-    * **cd .** =>  current directory
-    * **cd ..** => moves one directory up
-    * **cd ~** => moves to home directory
+* **mkdir**: Makes new directory but won't change to that directory
+* **cd**: Use to move to a different directory
+    * **cd _name_** => Specify the name of the directory to change to
+
+        ![screenshot of cd command using path](https://github.com/susanne-sundseth/Git-GH-for-writers.git/assets/cd_directory_name_with_path.png)
+
+    * **cd .** =>  Current directory
+    * **cd ..** => Moves one directory up
+    * **cd ~** => Moves to home directory
 
 
 ### Command Line Shortcuts
@@ -93,6 +99,7 @@ This course uses the Unix operating system command line to use Git.
 _command -o --option argument(s)_
 * Options modify the command
     * Use one dash for one-letter options
+
         ```
         git commit -m "Marketing changes"
         ```
@@ -100,6 +107,7 @@ _command -o --option argument(s)_
     * A command can contain more than one option
 * Arguments are additional data
     * If an argument is comprised of multiple elements that are separated by spaces, put the elements in quotes.
+
         ```
         git config --global user.name "Anna Hoffman"
         ```
@@ -108,13 +116,13 @@ _command -o --option argument(s)_
 
 ### File stages
 1. **Unstaged**: A local file was created, modified, or deleted in Git. Keep unstaged if you made changes that you are not sure you want to keep.
-2. **Staged**: A local change is marked with the intention to commit (save) in Git. Stage the file when you are fairly certain you want to keep the change.
-3. **Committed**: Save the version in Git. A description is included with each commit.
-4. **Pushed**: Upload the committed file to GitH or other server so you can share with others.
+2. **Staged**: A local file is marked with the intention to commit (save) in Git. Stage the file when you are fairly certain you want to keep the change.
+3. **Committed**: Save the version in Git. Include a description of the change with each commit.
+4. **Pushed**: Upload the committed file to GitHub or other server so you can share with others.
 
 ### Git Commands for Stages
-1. **Unstaged**: Just make changes on your machine. The files are considered unstaged.
-2. **Staged**: Use the _git add_ command.
+1. **Unstaged**: No commands. Just save changes to your machine.
+2. **Staged**: Use the _git add_ command. You can stage all eligible files or name a specific file.
 3. **Committed**: Use the _git commit_ command with a description. All staged files will be committed.
 4. **Pushed**: Use the _git push_ command. All committed files that were not previously pushed are pushed.
 
