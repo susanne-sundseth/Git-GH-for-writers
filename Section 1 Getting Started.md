@@ -88,9 +88,8 @@ This course uses the Unix operating system command line to use Git.
 
     * **cd .** =>  Current directory
     * **cd ..** => Moves one directory up
-    * **cd ~** => Moves to home directory
-
-
+    * **cd ~** => Moves to the home directory
+    
 ### Command Line Shortcuts
 * **Tab**: Fills in the rest of the directory name when possible
 * **Up arrow**: Scrolls through previous commands
