@@ -74,8 +74,8 @@ GitHub authorization requires a personal access token. See https://docs.github.c
 This course uses the Unix operating system command line to use Git.
 
 ### Unix commands
-* **pwd** (print working directory): returns the path of the current directory
-* **ls**: returns list of directories (folders) and files in the current directory
+* **pwd**: Returns the path of the current directory (print working directory)
+* **ls**: Returns list of directories (folders) and files in the current directory
 * **mkdir**: makes new directory but won't change to that directory
 * **cd**: use to move to a different directory
     * **cd _name_** => specify the name of the directory to change to
