@@ -11,7 +11,7 @@ The default branch is now called the main branch. Previously it was called the m
 
 **git status**: Shows status of files in a directory. Untracked files are unstaged files.
 
-![Screenshot of git status command return information](https://github.com/susanne-sundseth/Git-GH-for-writers.git/assets/git_status_return_example.png)
+![Screenshot of git status command return information](./assets/git_status_return_example.png)
 
 **git add**: Use to stage files.
 * **git add _filename_**: Use to stage a specific file.
@@ -49,7 +49,7 @@ When would you commit but not push?: Not ready to share a file.
 
 Use GitHub to view previous commits. 
 
-![Screenshot of commits button in Github](https://github.com/susanne-sundseth/Git-GH-for-writers.git/assets/access_commits_in_gh.png)
+![Screenshot of commits button in Github](./assets/access_commits_in_gh.png)
 
 ### Head
 Git tracks all commits but labels one as HEAD. The HEAD is the last commit in the currently checked out branch. You can move the HEAD label to a different commit. Use the commands below when moving the HEAD designation.
@@ -64,7 +64,7 @@ Git tracks all commits but labels one as HEAD. The HEAD is the last commit in th
 
 Use _git log --oneline_ to view the commits, then use _git checkout commit_ to change the HEAD.
 
-![Screenshot of commands to change HEAD](https://github.com/susanne-sundseth/Git-GH-for-writers.git/assets/change_head_example.png)
+![Screenshot of commands to change HEAD](./assets/change_head_example.png)
 
 > [!WARNING]
 > Do not make changes to previous commits. If you want to use info from a previous commit, copy it for use in your most current version.

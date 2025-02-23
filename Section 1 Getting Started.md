@@ -84,13 +84,13 @@ This course uses the Unix operating system command line to use Git.
 * **cd**: Use to move to a different directory
     * **cd _name_** => Specify the name of the directory to change to
 
-        ![screenshot of cd command using path](https://github.com/susanne-sundseth/Git-GH-for-writers.git/assets/cd_directory_name_with_path.png)
+        ![screenshot of cd command using path](./assets/cd_directory_name_with_path.png)
 
     * **cd .** =>  Current directory
     * **cd ..** => Moves one directory up
     * **cd ~** => Moves to the home directory
 
-        (Research why bullet does not render correctly in GitHub; correct in VS Code preview)
+        <!--Research why bullet does not render correctly in GitHub; correct in VS Code preview-->
 
 ### Command Line Shortcuts
 * **Tab**: Fills in the rest of the directory name when possible
