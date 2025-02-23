@@ -90,17 +90,18 @@ After you have updated the branch, merge it back into the branch where it came f
 **git branch _branch-name_**: Creates branch name but doesn't move you to the branch.
 
 **git checkout -b _branch-name_**: Creates branch and moves you to it. 
-> [!Note] Best practice to commit or [stash](#lesson-29-stash) your current branch changes before moving to another branch. 
+> [!Note] 
+> Best practice to commit or [stash](#lesson-29-stash) your current branch changes before moving to another branch. 
 
 **git checkout _branch-name_**: Moves you to the specified branch. 
 
 **git branch**: Displays all branches and indicates your current branch. 
 
-    You can also use _git status_ to view the current branch, any changes that have been staged for the next commit, changes that haven't been staged, and untracked files. 
+You can also use _git status_ to view the current branch, any changes that have been staged for the next commit, changes that haven't been staged, and untracked files. 
 
 **git brand -d _branch-name_**: Deletes branch.
 
-    You can also delete a branch in GitHub. You will see the change locally when you do a pull. 
+You can also delete a branch in GitHub. You will see the change locally when you do a pull. 
 
 **git push --set-upstream origin _branch-name_**: Use when you initially push a branch to GitHub.
 
@@ -111,8 +112,6 @@ After you have updated the branch, merge it back into the branch where it came f
 * When you use the upstream command, you don't have to use the _git push_ command.
 
 * If you use _git push_, Git will tell you to use the upstream command.
-
-
 
 See [Lesson 31 Merging branches](#lesson-31-merging-branches).
 
@@ -147,10 +146,9 @@ In this example, there is only one stash for the master branch. _In the middle_ 
 Can merge two branches with Git command line or using GitHub. GitHub is easier (because of visuals) but you must first push the changes in both branches to Github before the merge. 
 
 ### Pull request
-1. Create a pull request in GitHub when ready to merge branches. 
-
-    > [!Note]
-    > IRL someone will review your request to merge and then approve.
+> [!NOTE]
+> IRL someone will review your request to merge and then approve.
+1. Create a pull request in GitHub when ready to merge branches.
 2. GitHub will merge automatically if no conflicts.
 3. If conflicts occur, GitHub displays them and the approver resolves them before merging.
 
@@ -199,7 +197,7 @@ Cloning makes a local copy of a remote repo. It includes copies of all the files
 3. Copy the HTTPS URL.
 4. In Git Bash, enter these commands:
 
-    a. _cd ~_ to go to home directory.
+    a. _cd ~_ to go to home directory
 
     b. _git clone copiedURL_
 

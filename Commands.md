@@ -8,7 +8,7 @@
 **cd**: Use to move to a different directory.
 * **cd _name_** => Specify the name of the directory to change to
 
-    ![screenshot of cd command using path](https://github.com/susanne-sundseth/Git-GH-for-writers.git/assets/cd_directory_name_with_path.png)
+    ![screenshot of cd command using path](./assets/cd_directory_name_with_path.png)
 
 * **cd .** =>  Current directory    
 
@@ -37,7 +37,7 @@ _command -o --option argument(s)_
 ### Useful Git Commands
 **git status**: Shows status of files in a directory. Untracked files are unstaged files.
 
-![screenshot of git status command return information](https://github.com/susanne-sundseth/Git-GH-for-writers.git/assets/git_status_return_example.png)
+![screenshot of git status command return information](./assets/git_status_return_example.png)
 
 **git add _filename_**: Use to stage a specific file.
 
@@ -62,3 +62,39 @@ _command -o --option argument(s)_
 **git checkout _commit_**: Sets the commit to work on, use to set the current verion (HEAD) to an older version. When you use this command, Git modiifes the .md file so you'll get a message about reloading the file. Click **Yes**.
 
 **git chekout main**: Sets the current verion (HEAD) to the most recent on the main branch
+
+**git tag**: To view all tags
+
+**git tag -a _tag-name_ -m _"Message about tag"_**: The message is the description of the tag
+
+**git checkout tags/_tag-name_**: Checkout a commit with a tag
+
+**git push origin _tagname_**: Push to GitHub
+
+**git branch _branch-name_**: Creates branch name but doesn't move you to the branch.
+
+**git checkout -b _branch-name_**: Creates branch and moves you to it. 
+> [!Note] Best practice to commit or [stash](#lesson-29-stash) your current branch changes before moving to another branch. 
+
+**git checkout _branch-name_**: Moves you to the specified branch. 
+
+**git branch**: Displays all branches and indicates your current branch. 
+
+    You can also use _git status_ to view the current branch, any changes that have been staged for the next commit, changes that haven't been staged, and untracked files. 
+
+**git brand -d _branch-name_**: Deletes branch.
+
+    You can also delete a branch in GitHub. You will see the change locally when you do a pull. 
+
+**git push --set-upstream origin _branch-name_**: Use when you initially push a branch to GitHub.
+
+**git stash**: Creates stash and reverts to the most recent commit.
+
+**git stash save "_stash-name_"**: Use to create a stash name so that you can easily identify it in a stash list. Naming your stashes is good practice.
+
+**git stash list**: Lists the most recents stashes. 
+
+In this example, there is only one stash for the master branch. _In the middle_ is the stash name. 
+![stack list](./assets/stash_list.png)
+
+**git stash pop**: Restores the changes to the most recent stash on the stack. The changes are unstaged.
