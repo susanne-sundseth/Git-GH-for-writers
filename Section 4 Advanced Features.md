@@ -2,9 +2,7 @@
 
 ## Lesson 35 Rebasing
 
-Rebasing is a way to simplify history, reorganizing/rewriting your history as if you branched later, such as on the last commit of the branch.
-
-Rebasing accomplishes the same thing as merging, but the history of a merge is more complicated.
+Rebasing is a way to simplify history, reorganizing/rewriting your history as if you branched later, such as on the last commit of the branch. It accomplishes the same thing as merging, but the history of a merge is more complicated.
 
 As a writer, you are unlikely to rebase.
 
@@ -36,8 +34,6 @@ git reset --hard origin/branch-name
 4. Manually merge (cut/paste) the changes into the newly cloned repo.
 
 ## Lesson 37 Ignoring Files
-Some tools take source files and create build files which are the final (published) product, i.e, source = .md files and build = html files.
-
 You should only have source files in Git but you may have some files, like notes in a text files, that you want to store locally.
 
 ### Create a Hidden Ignore File
@@ -52,15 +48,15 @@ You should only have source files in Git but you may have some files, like notes
 * Use * as wildcard
 * Folders must end with /
 
+Example
+
 ![example of ignore file](./assets/ignore_file.png)
 
 ## Forking
 
-A fork is a copy of a repo that allows you to experiment without affecting the orginal project. It is similar to branching but branching  occurs in the same repo whereas forking is across GitHub accounts.
+A fork is a copy of a repo that allows you to experiment without affecting the orginal project. It is similar to branching but branching occurs in the same repo whereas forking occurs across GitHub accounts. Branching is part of Git but forking is part of GitHub.
 
-Branching is part of Git but forking is part of GitHub.
-
-You can create pull requests to merge changes into the original GitHub project. The owner of the orginal project decides which changes to keep.
+After you create a fork and make changes, you can create pull requests to merge your changes into the original GitHub project. The owner of the orginal project decides which changes to keep.
 
 Most common use of forking is with open source projects or non-public projects where team members fork and then create pull requests.
 
@@ -76,7 +72,7 @@ You can use GitHub for documentation by creating Markdown or Restructured text f
 
 ### Common Scenario
 1. Use Github to host files.
-2. Webmaster uses local copy of repo to run scripts to turn files into html. (Jekyll => .md, Sphinx => .rst), .adoc => asciidoctor)
+2. Webmaster uses local copy of repo to run scripts to turn files into html. (Jekyll => .md, Sphinx => .rst), asciidoctor => .adoc)
 
 
 
