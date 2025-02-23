@@ -1,24 +1,20 @@
 # Section 4 Advanced Features
 
-**Note**: Lessons that are not included are practice exercises.
-
 ## Lesson 35 Rebasing
 
 Rebasing is a way to simplify history, reorganizing/rewriting your history as if you branched later, such as on the last commit of the branch.
 
-Rebase accomplishes the same thing as a merge but the history of a merge is more complicated.
+Rebasing accomplishes the same thing as merging, but the history of a merge is more complicated.
 
 As a writer, you are unlikely to rebase.
 
 ## Lesson 36 Handling Problems
 
-* If you can't perform an action (push, pull, etc), try to figure out why.
-* Note that Git does not have an undo command other than reverting to another version.
-* No trash folder either so things are permanently gone.
+If you can't perform an action (push, pull, etc.), try to figure out why. Note that Git does not have an undo command other than reverting to another version. Git does not have a trash folder either so things are permanently gone.
 
 ### Revert to Last Working Version
 1. Copy your changed files to a folder outside the repo.
-2. Revert your changes to the version where Git works again.
+2. Revert your changes to the version where Git works.
 3. Manually merge (cut/paste) the changes from folder outside the repo into the folder inside the repo.
 
 ### Revert to Unstaged Changes
@@ -34,13 +30,13 @@ git reset --hard origin/branch-name
 ```
     
 ### Start Over with New Repo
-1. Copy files to outside the repo
-2. Delete the local repo
-3. Clone the repo into a new folder
-4. ManManually merge (cut/paste) the changes into the newly cloned repo
+1. Copy files to outside the repo.
+2. Delete the local repo.
+3. Clone the repo into a new folder.
+4. Manually merge (cut/paste) the changes into the newly cloned repo.
 
 ## Lesson 37 Ignoring Files
-Tools take source files and create build files which are the final (published) product, i.e, source = .md files and build = html files.
+Some tools take source files and create build files which are the final (published) product, i.e, source = .md files and build = html files.
 
 You should only have source files in Git but you may have some files, like notes in a text files, that you want to store locally.
 
@@ -60,11 +56,11 @@ You should only have source files in Git but you may have some files, like notes
 
 ## Forking
 
-A fork is a copy of a repo that allows you to experiment without affecting the orginal project. It is similar to branching but branching  occurs in the same repo wheras forking is across GitHub accounts.
+A fork is a copy of a repo that allows you to experiment without affecting the orginal project. It is similar to branching but branching  occurs in the same repo whereas forking is across GitHub accounts.
 
 Branching is part of Git but forking is part of GitHub.
 
-You can create pull requests to merge changes into the original GitHub project. The owner of the orginal project decides which changes to keep, if any.
+You can create pull requests to merge changes into the original GitHub project. The owner of the orginal project decides which changes to keep.
 
 Most common use of forking is with open source projects or non-public projects where team members fork and then create pull requests.
 
@@ -72,6 +68,17 @@ Most common use of forking is with open source projects or non-public projects w
 1. Locate the project.
 2. Click **Fork > Create New Fork**.
 3. After you make updates, click **Create Pull Request** and then follow instructions.
+
+## Lesson 40 Creating Documentation and Next Steps
+
+You can use GitHub for documentation by creating Markdown or Restructured text files. It is bare bones, simple with unsophiticated navigation. See [raspberrypi/documentation](https://github.com/raspberrypi/documentation) in GitHub.
+
+
+### Common Scenario
+1. Use Github to host files.
+2. Webmaster uses local copy of repo to run scripts to turn files into html. (Jekyll => .md, Sphinx => .rst), .adoc => asciidoctor)
+
+
 
 
 
