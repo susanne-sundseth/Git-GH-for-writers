@@ -136,7 +136,8 @@ Each time you create a stash, it goes to the top of the "stack". Each stash is g
 
 **git stash list**: Lists the most recents stashes. 
 
-In this example, there is only one stash for the master branch. _In the middle_ is the stash name. 
+In this example, there is only one stash for the master branch. _In the middle_ is the stash name.
+ 
 ![stack list](./assets/stash_list.png)
 
 **git stash pop**: Restores the changes to the most recent stash on the stack. The changes are unstaged.

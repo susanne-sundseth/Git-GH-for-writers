@@ -72,7 +72,7 @@ You can use GitHub for documentation by creating Markdown or Restructured text f
 
 ### Common Scenario
 1. Use Github to host files.
-2. Webmaster uses local copy of repo to run scripts to turn files into html. (Jekyll => .md, Sphinx => .rst), asciidoctor => .adoc)
+2. Webmaster uses local copy of repo to run scripts to turn files into html. (Jekyll => .md, Sphinx => .rst, asciidoctor => .adoc)
 
 
 
