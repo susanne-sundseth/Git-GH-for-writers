@@ -52,7 +52,7 @@ Example
 
 ![example of ignore file](./assets/ignore_file.png)
 
-## Forking
+## Lesson 38 Forking
 
 A fork is a copy of a repo that allows you to experiment without affecting the orginal project. It is similar to branching but branching occurs in the same repo whereas forking occurs across GitHub accounts. Branching is part of Git but forking is part of GitHub.
 
